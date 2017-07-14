@@ -4,7 +4,7 @@ $(function() {
     url: 'https://www.codeschool.com/users/1792932.json',
     dataType: 'jsonp',
     success: function(response) {
-      // handle response
+      // handle response, test #1: console.log('response', response)
       addCourses(response.courses.completed);
     }
   });
@@ -32,9 +32,8 @@ $(function() {
           target: '_blank',
           href: course.url,
           text: 'See course'
-
         }).appendTo($course);
-
+        
       })
     }
 });
